@@ -40,6 +40,7 @@ public class BeanUtils {
             Map<String, Object> map = BeanUtil.beanToMap(source);
             destList.add(map);
         }
+
         return destList;
     }
 }
