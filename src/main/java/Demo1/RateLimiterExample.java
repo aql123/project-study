@@ -51,6 +51,7 @@ public class RateLimiterExample {
      */
     private final static Semaphore sem = new Semaphore(3);
 
+
     private static void testSemaphore() {
         try {
             sem.acquire();
