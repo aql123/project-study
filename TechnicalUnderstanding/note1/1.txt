@@ -2,9 +2,19 @@ Spring AOP应用场景有哪些？Aop工作原理分析
 
 AOP为Aspect Oriented Programming面向切面编程，通过预编译方式和运行期间动态代理实现程序功能的统一维护的一种技术。
 　一、AOP应用场景：　　AOP用来封装横切关注点，具体可以在下面的场景中使用:　
-　Authentication 权限、Caching 缓存、Context passing 内容传递、Error handling 错误处理、Lazy loading 懒加载、Debugging 调试、logging, tracing, profiling and monitoring 记录跟踪优化校准、Performance optimization 性能优化、Persistence 持久化、Resource pooling 资源池、Synchronization 同步、Transactions 事务。　
+　Authentication 权限、Caching 缓存、Context passing 内容传递、Error handling 错误处理、Lazy loading 懒加载、Debugging 调试、logging, tracing, profiling and monitoring 记录跟踪优化校准、Performance optimization 性能优化、
+Persistence 持久化、Resource pooling 资源池、Synchronization 同步、Transactions 事务。　
 　二、使用Spring AOP？　　可以通过配置文件或者编程的方式来使用Spring AOP。　　
-配置可以通过xml文件来进行，大概有四种方式：　　1. 配置ProxyFactoryBean，显式地设置advisors, advice, target等　　2.配置AutoProxyCreator，这种方式下，还是如以前一样使用定义的bean，但是从容器中获得的其实已经是代理对象　
-　3.通过<aop:config>来配置　　4.通过<aop: aspectj-autoproxy>来配置，使用AspectJ的注解来标识通知及切入点　　也可以直接使用ProxyFactory来以编程的方式使用Spring AOP，通过ProxyFactory提供的方法可以设置target对象, advisor等相关配置，最终通过 getProxy()方法来获取代理对象
-　三、Aop的原理是什么？　　AOP 是面向切面编程，是通过代理的方式为程序添加统一功能，集中解决一些公共问题。AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是函数式编程的一种衍生范型。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。　
+配置可以通过xml文件来进行，大概有四种方式：　　
+  1. 配置ProxyFactoryBean，显式地设置advisors, advice, target等　　
+  2.配置AutoProxyCreator，这种方式下，还是如以前一样使用定义的bean，但是从容器中获得的其实已经是代理对象　
+　3.通过<aop:config>来配置　　4.通过<aop: aspectj-autoproxy>来配置，使用AspectJ的注解来标识通知及切入点　　
+也可以直接使用ProxyFactory来以编程的方式使用Spring AOP，通过ProxyFactory提供的方法可以设置target对象, advisor等相关配置，最终通过 getProxy()方法来获取代理对象
+　三、Aop的原理是什么？　
+　AOP 是面向切面编程，是通过代理的方式为程序添加统一功能，集中解决一些公共问题。
+AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是函数式编程的一种衍生范型。
+利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。　
 　四、Aop优势是什么？　　1、各个步骤之间的良好隔离性　　2、源代码无关性
+
+
+
