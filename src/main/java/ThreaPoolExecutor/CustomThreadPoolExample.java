@@ -5,6 +5,7 @@ package ThreaPoolExecutor;
  * @author: aiqiulin
  * @Date: 2022/03/30 15:54
  */
+
 public class CustomThreadPoolExample {
     public static void main(String[] args) {
         CustomThreadPool customThreadPool = new CustomThreadPool(2);
